@@ -18,5 +18,3 @@ export default class MyAccountPage extends BasePage {
     }
   }
 }
-
-////a[text()="Log out"]
