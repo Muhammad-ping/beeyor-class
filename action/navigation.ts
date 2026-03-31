@@ -1,8 +1,8 @@
 import { BASE_URL } from "../models/argumants";
 import { Page } from "@playwright/test";
 import LoginPage from "../pages/login/LoginPage";
-import Addresses from "../pages/addresses/Addresses";
-
+import Addresses from "../pages/myAccountPage/Addresses";
+import Orders from "../pages/myAccountPage/Orders";
 const goToStartPage = async (page: Page): Promise<void> => {
   await page.goto(BASE_URL);
 };
@@ -20,4 +20,11 @@ const goToAddressesPage = async (page: Page): Promise<Addresses> => {
   return new Addresses(page);
 };
 
-export { goToStartPage, goToLoginPage, goToAddressesPage };
+const goToOrdersPage = async (page: Page): Promise<Orders> => {
+  await page.click(
+    '//nav[@aria-label="Account pages"]//a[@href="http://staging.shopping.beeyor.com/my-account/orders/"]',
+  );
+  return new Orders(page);
+};
+
+export { goToStartPage, goToLoginPage, goToAddressesPage, goToOrdersPage };

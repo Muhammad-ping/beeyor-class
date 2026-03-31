@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 
-import BasePage from "../Basepage.ts";
+import BasePage from "../myAccountPage/BasePage.ts";
 import MyAccountPage from "../myAccountPage/MyAccountPage.ts";
 
 export default class LoginPage extends BasePage {
