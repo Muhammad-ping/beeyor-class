@@ -1,7 +1,6 @@
 import { expect } from "@playwright/test";
 import { test } from "../fixtures/auth";
-import { login } from "../utilities/Login";
-import { orders } from "../utilities/Orders";
+import { login } from "../utilities/login";
 import { goToOrdersPage } from "../action/navigation";
 import Orders from "../pages/myAccountPage/Orders";
 
@@ -11,21 +10,10 @@ test(
   async ({ page }) => {
     const Dashboard = await login(page);
     await Dashboard.waitUntilPageLoaded();
-    const addres = await orders(page);
+    const addres = await goToOrdersPage(page);
     await addres.waitUntilOrdersLoaded();
   },
 );
-
-// test(
-//   "verify a user can login and click Orders ",
-//   { tag: ["@smoke", "@regression"] },
-//   async ({ page }) => {
-//     const Dashboard = await login(page);
-//     await Dashboard.waitUntilPageLoaded();
-//     const addres = await goToOrdersPage(page);
-//     await addres.waitUntilOrdersLoaded();
-//   },
-// );
 
 // test(
 //   "login with fixture",

@@ -1,0 +1,277 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation "Toolbar":
+      - menu:
+        - group [ref=e3]:
+          - menuitem "About WordPress" [ref=e4] [cursor=pointer]:
+            - generic [ref=e6]: About WordPress
+        - group [ref=e7]:
+          - menuitem "Staging shopping" [ref=e8] [cursor=pointer]
+        - group [ref=e9]:
+          - menuitem "Live" [ref=e10] [cursor=pointer]
+        - group [ref=e11]:
+          - menuitem "Edit Site" [ref=e12] [cursor=pointer]
+        - group [ref=e13]:
+          - menuitem "Customize" [ref=e14] [cursor=pointer]
+        - group [ref=e15]:
+          - menuitem "0 Comments in moderation" [ref=e16] [cursor=pointer]:
+            - generic [ref=e18]: "0"
+            - generic [ref=e19]: 0 Comments in moderation
+        - group [ref=e20]:
+          - menuitem "New" [ref=e21] [cursor=pointer]:
+            - generic [ref=e23]: New
+        - group [ref=e24]:
+          - menuitem "Edit Page" [ref=e25] [cursor=pointer]
+      - menu [ref=e26]:
+        - group [ref=e27]:
+          - menuitem "Admin Notices" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29]: Admin Notices
+        - group [ref=e30]:
+          - menuitem "Howdy, muhammad" [ref=e31] [cursor=pointer]
+        - group [ref=e32]:
+          - menuitem "Search" [ref=e33]:
+            - generic [ref=e34]:
+              - textbox "Search" [ref=e35] [cursor=pointer]
+              - generic [ref=e36]: Search
+  - link "Skip to content" [ref=e37] [cursor=pointer]:
+    - /url: "#wp--skip-link--target"
+  - generic [ref=e38]:
+    - banner [ref=e39]:
+      - generic [ref=e41]:
+        - paragraph [ref=e42]:
+          - text: Black Friday.
+          - mark [ref=e43]: Save up to 50%
+          - text: "Deal Ends: + 4 day."
+        - generic [ref=e46] [cursor=pointer]: Shop Now
+      - generic [ref=e48]:
+        - heading "Staging shopping" [level=1] [ref=e51]:
+          - link "Staging shopping" [ref=e52] [cursor=pointer]:
+            - /url: http://staging.shopping.beeyor.com
+        - figure [ref=e55]:
+          - link [ref=e56] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e58]:
+          - link "My Account" [ref=e60] [cursor=pointer]:
+            - /url: http://staging.shopping.beeyor.com/my-account/
+            - img
+            - generic [ref=e62]: My Account
+          - figure [ref=e63]:
+            - link [ref=e64] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e65]:
+            - button "0 items in cart" [ref=e66] [cursor=pointer]:
+              - img [ref=e68]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph:
+                          - strong: Your cart is currently empty!
+      - generic [ref=e75]:
+        - navigation [ref=e76]:
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - link "Cart" [ref=e83] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/cart/
+            - listitem [ref=e84]:
+              - link "Checkout" [ref=e85] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/checkout/
+            - listitem [ref=e86]:
+              - link "My Account" [ref=e87] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/my-account/
+            - listitem [ref=e88]:
+              - link "Shop" [ref=e89] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/
+              - button "Shop submenu" [ref=e90] [cursor=pointer]:
+                - img [ref=e91]
+        - search [ref=e94]:
+          - generic [ref=e95]: Search
+          - generic [ref=e96]:
+            - searchbox "Search" [ref=e97]
+            - button "Search" [ref=e98] [cursor=pointer]:
+              - img [ref=e99]
+    - generic [ref=e101]:
+      - heading "Addresses" [level=2] [ref=e107]
+      - main [ref=e108]:
+        - generic [ref=e110]:
+          - navigation "Account pages" [ref=e111]:
+            - list [ref=e112]:
+              - listitem [ref=e113]:
+                - link "Dashboard" [ref=e114] [cursor=pointer]:
+                  - /url: http://staging.shopping.beeyor.com/my-account/
+              - listitem [ref=e115]:
+                - link "Orders" [ref=e116] [cursor=pointer]:
+                  - /url: http://staging.shopping.beeyor.com/my-account/orders/
+              - listitem [ref=e117]:
+                - link "Downloads" [ref=e118] [cursor=pointer]:
+                  - /url: http://staging.shopping.beeyor.com/my-account/downloads/
+              - listitem [ref=e119]:
+                - link "Addresses" [ref=e120] [cursor=pointer]:
+                  - /url: http://staging.shopping.beeyor.com/my-account/edit-address/
+              - listitem [ref=e121]:
+                - link "Payment methods" [ref=e122] [cursor=pointer]:
+                  - /url: http://staging.shopping.beeyor.com/my-account/payment-methods/
+              - listitem [ref=e123]:
+                - link "Account details" [ref=e124] [cursor=pointer]:
+                  - /url: http://staging.shopping.beeyor.com/my-account/edit-account/
+              - listitem [ref=e125]:
+                - link "Log out" [ref=e126] [cursor=pointer]:
+                  - /url: http://staging.shopping.beeyor.com/my-account/customer-logout/?_wpnonce=b1d9240660
+          - generic [ref=e128]:
+            - heading "Billing address" [level=2] [ref=e129]
+            - generic [ref=e130]:
+              - generic [ref=e131]:
+                - paragraph [ref=e132]:
+                  - generic [ref=e133]: Email address *
+                  - textbox "Email address" [ref=e135]:
+                    - /placeholder: ""
+                    - text: muhammad+test@test.te
+                - paragraph [ref=e136]:
+                  - generic [ref=e137]: First name *
+                  - textbox "First name" [ref=e139]:
+                    - /placeholder: ""
+                - paragraph [ref=e140]:
+                  - generic [ref=e141]: Last name *
+                  - textbox "Last name" [ref=e143]:
+                    - /placeholder: ""
+                - paragraph [ref=e144]:
+                  - generic [ref=e145]: Country / Region *
+                  - generic [ref=e146]:
+                    - combobox [ref=e147] [cursor=pointer]
+                    - combobox "Country / Region" [ref=e150] [cursor=pointer]:
+                      - textbox [ref=e151]
+                - paragraph [ref=e152]:
+                  - generic [ref=e153]: Street address *
+                  - textbox "Street address" [ref=e155]:
+                    - /placeholder: House number and street name
+                - paragraph [ref=e156]:
+                  - generic [ref=e157]: Apartment, suite, unit, etc. (optional)
+                  - textbox "Apartment, suite, unit, etc. (optional)" [ref=e159]
+                - paragraph [ref=e160]:
+                  - generic [ref=e161]: Town / City *
+                  - textbox "Town / City" [ref=e163]:
+                    - /placeholder: ""
+                - paragraph [ref=e164]:
+                  - generic [ref=e165]: State *
+                  - generic [ref=e166]:
+                    - combobox [ref=e167] [cursor=pointer]
+                    - combobox "State" [ref=e170] [cursor=pointer]:
+                      - textbox [ref=e171]
+                - paragraph [ref=e172]:
+                  - generic [ref=e173]: ZIP Code *
+                  - textbox "ZIP Code" [ref=e175]:
+                    - /placeholder: ""
+                - paragraph [ref=e176]:
+                  - generic [ref=e177]: Phone (optional)
+                  - textbox "Phone (optional)" [ref=e179]:
+                    - /placeholder: ""
+              - paragraph [ref=e180]:
+                - button "Save address" [ref=e181] [cursor=pointer]
+    - contentinfo [ref=e182]:
+      - generic [ref=e184]:
+        - generic [ref=e186]:
+          - heading "Staging shopping" [level=1] [ref=e188]:
+            - link "Staging shopping" [ref=e189] [cursor=pointer]:
+              - /url: http://staging.shopping.beeyor.com
+          - paragraph [ref=e190]: Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua tepo the.
+          - list [ref=e191]:
+            - listitem [ref=e192]:
+              - link "Facebook" [ref=e193] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e194]
+                - generic [ref=e196]: Facebook
+            - listitem [ref=e197]:
+              - link "Twitter" [ref=e198] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e199]
+                - generic [ref=e201]: Twitter
+            - listitem [ref=e202]:
+              - link "LinkedIn" [ref=e203] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e204]
+                - generic [ref=e206]: LinkedIn
+            - listitem [ref=e207]:
+              - link "Instagram" [ref=e208] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e209]
+                - generic [ref=e211]: Instagram
+        - generic [ref=e212]:
+          - heading "Information" [level=3] [ref=e214]
+          - list [ref=e215]:
+            - listitem [ref=e216]:
+              - link "About Us" [ref=e217] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e218]:
+              - link "Contact Us" [ref=e219] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e220]:
+              - link "Terms & Conditions" [ref=e221] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e222]:
+              - link "Returns & Exchanges" [ref=e223] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e224]:
+              - link "Shipping & Delivery" [ref=e225] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e226]:
+              - link "Privacy Policy" [ref=e227] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e228]:
+          - heading "Information" [level=3] [ref=e230]
+          - list [ref=e231]:
+            - listitem [ref=e232]:
+              - link "About Us" [ref=e233] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e234]:
+              - link "Contact Us" [ref=e235] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e236]:
+              - link "Terms & Conditions" [ref=e237] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e238]:
+              - link "Returns & Exchanges" [ref=e239] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e240]:
+              - link "Shipping & Delivery" [ref=e241] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e242]:
+              - link "Privacy Policy" [ref=e243] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e244]:
+          - heading "Quick Links" [level=3] [ref=e246]
+          - list [ref=e248]:
+            - listitem [ref=e249]:
+              - link "Store Location" [ref=e250] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e251]:
+              - link "My Account" [ref=e252] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e253]:
+              - link "Accessories" [ref=e254] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e255]:
+              - link "Orders Tracking" [ref=e256] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e257]:
+              - link "FAQs" [ref=e258] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e259]:
+              - link "Contact" [ref=e260] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e261]:
+          - heading "Contact Us" [level=3] [ref=e263]
+          - generic [ref=e264]:
+            - paragraph [ref=e265]: example@mail.com
+            - paragraph [ref=e266]: +1 234 567 890
+            - paragraph [ref=e267]: 457 Morningview Lane, NY
+          - figure [ref=e268]
+      - paragraph [ref=e271]:
+        - text: Proudly powered by
+        - link "Firefly Themes" [ref=e272] [cursor=pointer]:
+          - /url: https://fireflythemes.com/
+        - text: and
+        - link "WordPress" [ref=e273] [cursor=pointer]:
+          - /url: https://wordpress.org
+  - status [ref=e274]

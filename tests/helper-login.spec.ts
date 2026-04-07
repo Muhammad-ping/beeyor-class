@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { goToLoginPage, goToStartPage } from "../action/navigation";
-import { login } from "../utilities/Login";
-import { addresses } from "../utilities/addresses";
+import { login } from "../utilities/login";
+
 test(
   "Plain login - verify a user can login ",
   { tag: ["@smoke", "@regression"] },
@@ -25,13 +25,13 @@ test(
   },
 );
 
-test(
-  "2verify a user can login and click Addresses ",
-  { tag: ["@smoke", "@regression"] },
-  async ({ page }) => {
-    const Dashboard = await login(page);
-    await Dashboard.waitUntilPageLoaded();
-    const addres = await addresses(page);
-    await addres.waitUntilAddPageLoaded();
-  },
-);
+// test(
+//   "2verify a user can login and click Addresses ",
+//   { tag: ["@smoke", "@regression"] },
+//   async ({ page }) => {
+//     const Dashboard = await login(page);
+//     await Dashboard.waitUntilPageLoaded();
+//     const addres = await addresses(page);
+//     await addres.waitUntilAddPageLoaded();
+//   },
+// );

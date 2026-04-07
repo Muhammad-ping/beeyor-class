@@ -1,8 +1,9 @@
-import { BASE_URL } from "../models/argumants";
+import { BASE_URL } from "../models/Argumants";
 import { Page } from "@playwright/test";
 import LoginPage from "../pages/login/LoginPage";
-import Addresses from "../pages/myAccountPage/Addresses";
+import Addresses from "../pages/myAccountPage/Address/Addresses";
 import Orders from "../pages/myAccountPage/Orders";
+import { BillingAddress } from "../pages/myAccountPage/Address/BillingAddress";
 const goToStartPage = async (page: Page): Promise<void> => {
   await page.goto(BASE_URL);
 };
@@ -27,4 +28,16 @@ const goToOrdersPage = async (page: Page): Promise<Orders> => {
   return new Orders(page);
 };
 
-export { goToStartPage, goToLoginPage, goToAddressesPage, goToOrdersPage };
+const goToBillingAddress = async (page: Page): Promise<BillingAddress> => {
+  await page.click(
+    '[href="http://staging.shopping.beeyor.com/my-account/edit-address/billing/"]',
+  );
+  return new BillingAddress(page);
+};
+export {
+  goToStartPage,
+  goToLoginPage,
+  goToAddressesPage,
+  goToOrdersPage,
+  goToBillingAddress,
+};

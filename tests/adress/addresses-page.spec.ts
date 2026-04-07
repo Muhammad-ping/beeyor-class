@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
-import { login } from "../utilities/Login";
-import { addresses } from "../utilities/addresses";
+import { login } from "../../utilities/login";
+import { goToAddressesPage } from "../../action/navigation";
 
 test(
   "verify a user can login and click Addresses ",
@@ -20,9 +20,7 @@ test(
   async ({ page }) => {
     const Dashboard = await login(page);
     await Dashboard.waitUntilPageLoaded();
-    const addres = await addresses(page);
+    const addres = await goToAddressesPage(page);
     await addres.waitUntilAddPageLoaded();
   },
 );
-//test
-// 2 time test

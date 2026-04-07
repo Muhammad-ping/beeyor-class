@@ -1,21 +1,38 @@
 import BasePage from "../pages/myAccountPage/BasePage";
-import CarComponent from "../pages/myAccountPage/CarComponents";
-import ProductsTable from "../home/ProductsTable";
+import CartComponent from "./CartComponent";
+import { ProductsTable } from "./ProductsTable";
+
+/**
+ * Dashboard Page page object
+ * URL: /
+ */
 
 export default class HomePage extends BasePage {
-  async waitUntilPageLoaded() {
-    await this.waitForElement('//h2[text() = "Trending Products"]');
+  async waitUntilPageIsLoaded() {
+    await this.waitForElement("//h2[contains(., 'Trending Products')]");
   }
-  async openCar(): Promise<CarComponent> {
-    await this.click('[xmlns="http://www.w3.org/2000/svg"]');
-    await this.waitForElement('[role="dialog"]');
 
-    return new CarComponent(this.page.locator('[role="dialog"]'));
+  async openCart(): Promise<CartComponent> {
+    await this.click("//button[contains(@aria-label, 'items in cart')]");
+    await this.waitForElement(
+      "//div[@data-block-name='woocommerce/mini-cart-contents']",
+    );
+
+    return new CartComponent(
+      this.page.locator(
+        "//div[@data-block-name='woocommerce/mini-cart-contents']",
+      ),
+    );
   }
-  getTredingProductsTable() {
+
+  async getTrendingTitle(): Promise<string> {
+    return this.getText("//p[contains(., 'Trending Now')]");
+  }
+
+  getTrendingProductsTable() {
     return new ProductsTable(
       this.page.locator(
-        '[class="wp-block-group has-background-background-color has-background is-layout-constrained wp-container-core-group-is-layout-900d285a wp-block-group-is-layout-constrained"]',
+        "//div[contains(@class, 'group')][contains(@class, 'has-background')][div[contains(., 'Trending Products')]]",
       ),
     );
   }
@@ -23,7 +40,7 @@ export default class HomePage extends BasePage {
   getNewArrivalsProductsTable() {
     return new ProductsTable(
       this.page.locator(
-        '[class="wp-block-group has-background-background-color has-background is-layout-constrained wp-container-core-group-is-layout-c0ef7265 wp-block-group-is-layout-constrained"]',
+        "//div[contains(@class, 'group')][contains(@class, 'has-background')][div[contains(., 'New Arrivals')]]",
       ),
     );
   }

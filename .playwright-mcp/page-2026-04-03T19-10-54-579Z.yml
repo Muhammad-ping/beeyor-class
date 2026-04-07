@@ -1,0 +1,192 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#wp--skip-link--target"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - paragraph [ref=e7]:
+          - text: Black Friday.
+          - mark [ref=e8]: Save up to 50%
+          - text: "Deal Ends: + 4 day."
+        - generic [ref=e11] [cursor=pointer]: Shop Now
+      - generic [ref=e13]:
+        - heading "Staging shopping" [level=1] [ref=e16]:
+          - link "Staging shopping" [ref=e17] [cursor=pointer]:
+            - /url: http://staging.shopping.beeyor.com
+        - figure [ref=e20]:
+          - link [ref=e21] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e23]:
+          - link "Login" [ref=e25] [cursor=pointer]:
+            - /url: http://staging.shopping.beeyor.com/my-account/
+            - img
+            - generic [ref=e27]: Login
+          - figure [ref=e28]:
+            - link [ref=e29] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e30]:
+            - button "0 items in cart" [ref=e31] [cursor=pointer]:
+              - img [ref=e33]
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - paragraph:
+                          - strong: Your cart is currently empty!
+      - generic [ref=e40]:
+        - navigation [ref=e41]:
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Cart" [ref=e48] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/cart/
+            - listitem [ref=e49]:
+              - link "Checkout" [ref=e50] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/checkout/
+            - listitem [ref=e51]:
+              - link "My Account" [ref=e52] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/my-account/
+            - listitem [ref=e53]:
+              - link "Shop" [ref=e54] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/
+              - button "Shop submenu" [ref=e55] [cursor=pointer]:
+                - img [ref=e56]
+        - search [ref=e59]:
+          - generic [ref=e60]: Search
+          - generic [ref=e61]:
+            - searchbox "Search" [ref=e62]
+            - button "Search" [ref=e63] [cursor=pointer]:
+              - img [ref=e64]
+    - generic [ref=e66]:
+      - heading "Addresses" [level=2] [ref=e72]
+      - main [ref=e73]:
+        - generic [ref=e75]:
+          - heading "Login" [level=2] [ref=e76]
+          - generic [ref=e77]:
+            - paragraph [ref=e78]:
+              - generic [ref=e79]:
+                - text: Username or email address *
+                - generic [ref=e80]: Required
+              - textbox "Username or email address Required" [ref=e81]
+            - paragraph [ref=e82]:
+              - generic [ref=e83]:
+                - text: Password *
+                - generic [ref=e84]: Required
+              - generic [ref=e85]:
+                - textbox "Password Required" [ref=e86]
+                - button "Show password" [ref=e87] [cursor=pointer]: 
+            - paragraph [ref=e88]:
+              - generic [ref=e89]:
+                - checkbox "Remember me" [ref=e90]
+                - text: Remember me
+              - button "Log in" [ref=e91] [cursor=pointer]
+            - paragraph [ref=e92]:
+              - link "Lost your password?" [ref=e93] [cursor=pointer]:
+                - /url: http://staging.shopping.beeyor.com/my-account/lost-password/
+    - contentinfo [ref=e94]:
+      - generic [ref=e96]:
+        - generic [ref=e98]:
+          - heading "Staging shopping" [level=1] [ref=e100]:
+            - link "Staging shopping" [ref=e101] [cursor=pointer]:
+              - /url: http://staging.shopping.beeyor.com
+          - paragraph [ref=e102]: Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua tepo the.
+          - list [ref=e103]:
+            - listitem [ref=e104]:
+              - link "Facebook" [ref=e105] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e106]
+                - generic [ref=e108]: Facebook
+            - listitem [ref=e109]:
+              - link "Twitter" [ref=e110] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e111]
+                - generic [ref=e113]: Twitter
+            - listitem [ref=e114]:
+              - link "LinkedIn" [ref=e115] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e116]
+                - generic [ref=e118]: LinkedIn
+            - listitem [ref=e119]:
+              - link "Instagram" [ref=e120] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e121]
+                - generic [ref=e123]: Instagram
+        - generic [ref=e124]:
+          - heading "Information" [level=3] [ref=e126]
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - link "About Us" [ref=e129] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e130]:
+              - link "Contact Us" [ref=e131] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e132]:
+              - link "Terms & Conditions" [ref=e133] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e134]:
+              - link "Returns & Exchanges" [ref=e135] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e136]:
+              - link "Shipping & Delivery" [ref=e137] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e138]:
+              - link "Privacy Policy" [ref=e139] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e140]:
+          - heading "Information" [level=3] [ref=e142]
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - link "About Us" [ref=e145] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e146]:
+              - link "Contact Us" [ref=e147] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e148]:
+              - link "Terms & Conditions" [ref=e149] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e150]:
+              - link "Returns & Exchanges" [ref=e151] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e152]:
+              - link "Shipping & Delivery" [ref=e153] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e154]:
+              - link "Privacy Policy" [ref=e155] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e156]:
+          - heading "Quick Links" [level=3] [ref=e158]
+          - list [ref=e160]:
+            - listitem [ref=e161]:
+              - link "Store Location" [ref=e162] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e163]:
+              - link "My Account" [ref=e164] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e165]:
+              - link "Accessories" [ref=e166] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e167]:
+              - link "Orders Tracking" [ref=e168] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e169]:
+              - link "FAQs" [ref=e170] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e171]:
+              - link "Contact" [ref=e172] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e173]:
+          - heading "Contact Us" [level=3] [ref=e175]
+          - generic [ref=e176]:
+            - paragraph [ref=e177]: example@mail.com
+            - paragraph [ref=e178]: +1 234 567 890
+            - paragraph [ref=e179]: 457 Morningview Lane, NY
+          - figure [ref=e180]
+      - paragraph [ref=e183]:
+        - text: Proudly powered by
+        - link "Firefly Themes" [ref=e184] [cursor=pointer]:
+          - /url: https://fireflythemes.com/
+        - text: and
+        - link "WordPress" [ref=e185] [cursor=pointer]:
+          - /url: https://wordpress.org
+  - status [ref=e186]

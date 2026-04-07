@@ -1,20 +1,19 @@
-import BaseComponent from "../pages/myAccountPage/BaceComponent";
 import parseNumeric from "../utilities/perseNumeric";
+import BaceComponent from "../pages/myAccountPage/BaceComponent";
 
-export default class ProductsTable extends BaseComponent {
+export class ProductsTable extends BaceComponent {
   async getCurrentProducts(): Promise<Product[]> {
     const products = this.element.locator(
       "//ul[contains(@class, 'products')]//li[contains(@class, 'product')]",
     );
-
     await products.first().waitFor({ state: "visible" });
-
     const allProducts = await products.all();
-    return allProducts.map((product) => new Product(product));
+    const productsList = allProducts.map((product) => new Product(product));
+    return productsList;
   }
 }
 
-export class Product extends BaseComponent {
+export class Product extends BaceComponent {
   async getTitle(): Promise<string> {
     return await this.getText("//div[contains(@class, 'title')]");
   }
@@ -36,14 +35,12 @@ export class Product extends BaseComponent {
     const button = this.element.locator(
       "//a[contains(@aria-label, 'Add to cart')]",
     );
-
     await this.waitForElement("//a[@title='View cart']");
-
     const classAttr = await button.getAttribute("class");
     return classAttr?.includes("added") ?? false;
   }
 
-  async isProductPurchasable(): Promise<boolean> {
+  async isProductPurchsable(): Promise<boolean> {
     await this.hover("//img");
     return await this.isVisible("//a[contains(@aria-label, 'Add to cart')]");
   }

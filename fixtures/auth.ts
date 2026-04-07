@@ -1,5 +1,5 @@
 import { test as base, Page } from "@playwright/test";
-import { login } from "../utilities/Login";
+import { login } from "../utilities/login";
 import MyAccountPage from "../pages/myAccountPage/MyAccountPage";
 
 /* Define a custom fixture that logs before each test
