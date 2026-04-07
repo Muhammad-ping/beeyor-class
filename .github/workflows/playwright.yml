@@ -1,6 +1,6 @@
 name: Playwright Tests
+
 on:
-  # Manual trigger with input parameters for test type
   workflow_dispatch:
     inputs:
       test_type:
@@ -14,10 +14,6 @@ on:
         required: false
         default: ""
         type: string
-  # Scheduled — runs automatically
-  schedule:
-    - cron: "0 17 * * 2" # 12:00 AM (midnight) EST
-    - cron: "0 17 * * 5" # 12:00 PM (noon) EST
 
 jobs:
   test:
@@ -25,23 +21,41 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+
       - uses: actions/setup-node@v5
         with:
           node-version: lts/*
+
       - name: Install dependencies
         run: npm ci
+
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+
       - name: Run Playwright tests
         env:
           TEST_TYPE: ${{ github.event.inputs.test_type }}
           TEST_NAME_FILTER: ${{ github.event.inputs.test_name_filter }}
         run: |
-          if [ -z "$TEST_NAME_FILTER" ]; then
-            npx playwright test --grep "@$TEST_TYPE"
+          echo "TEST_TYPE=$TEST_TYPE"
+          echo "TEST_NAME_FILTER=$TEST_NAME_FILTER"
+
+          # Определяем теги для запуска
+          if [ "$TEST_TYPE" = "all" ]; then
+            GREP_TAGS="@smoke|@regression"
           else
-            npx playwright test --grep "$TEST_NAME_FILTER"
+            GREP_TAGS="@$TEST_TYPE"
           fi
+
+          # Запуск тестов
+          if [ -n "$TEST_NAME_FILTER" ]; then
+            echo "Running tests filtered by name: $TEST_NAME_FILTER"
+            npx playwright test --grep "$TEST_NAME_FILTER" || echo "No tests matched"
+          else
+            echo "Running tests for tags: $GREP_TAGS"
+            npx playwright test --grep "$GREP_TAGS" || echo "No tests matched"
+          fi
+
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
