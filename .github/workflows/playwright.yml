@@ -8,7 +8,7 @@ on:
         required: true
         default: "smoke"
         type: choice
-        options: ["smoke", "regression"]
+        options: ["smoke", "regression", "all"]
       test_name_filter:
         description: "Optional: Filter tests by name (regex supported)"
         required: false
@@ -16,8 +16,8 @@ on:
         type: string
   # Scheduled — runs automatically
   schedule:
-    - cron: "0 5 * * 1-5" # 12:00 AM (midnight) EST
-    # - cron: "0 17 * * 1-5" # 12:00 PM (noon) EST
+    - cron: "0 17 * * 2" # 12:00 AM (midnight) EST
+    - cron: "0 17 * * 5" # 12:00 PM (noon) EST
 
 jobs:
   test:
