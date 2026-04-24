@@ -9,9 +9,9 @@ test(
   { tag: ["@smoke", "@regression"] },
   async ({ page }) => {
     const Dashboard = await login(page);
-    await Dashboard.waitUntilPageLoaded();
+    Dashboard.waitUntilPageLoaded();
     const addres = await goToOrdersPage(page);
-    await addres.waitUntilOrdersLoaded();
+    addres.waitUntilOrdersLoaded();
   },
 );
 

@@ -1,4 +1,4 @@
-import BasePage from "../BasePage";
+import BasePage from "../../Basic/BasePage";
 
 export default class Addresses extends BasePage {
   // async clickAddBtn(): Promise<Addresses> {

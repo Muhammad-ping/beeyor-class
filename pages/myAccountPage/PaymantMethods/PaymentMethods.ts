@@ -1,7 +1,7 @@
-import BasePage from "../Basic/BasePage";
+import BasePage from "../../Basic/BasePage";
 
-export default class Orders extends BasePage {
-  async waitUntilOrdersLoaded() {
+export default class PaymentMethods extends BasePage {
+  async waitUntilPaymentMethodsLoaded() {
     await this.waitForElement(
       '[class="has-text-align-left alignwide wp-block-post-title has-text-color has-background-color"]',
     );

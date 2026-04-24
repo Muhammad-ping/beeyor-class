@@ -1,4 +1,4 @@
-import BasePage from "../BasePage";
+import BasePage from "../../Basic/BasePage";
 
 export class BillingAddress extends BasePage {
   async waitUntilAddPageLoaded() {

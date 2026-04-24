@@ -1,4 +1,4 @@
-import BasePage from "./BasePage";
+import BasePage from "../Basic/BasePage";
 
 export default class MyAccountPage extends BasePage {
   async waitUntilPageLoaded() {
